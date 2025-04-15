@@ -19,15 +19,13 @@ html{
 .flex{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 header{
     width: 100%;
-    padding: 40px 4px;
+    padding: 30px 4px;
     position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .Logo{
@@ -76,10 +74,28 @@ header ul li a{
     transition: .2s;
 }
 
+.pesquisa-container{
+    position: relative;
+}
+
+.pesquisa-container input{
+    width: 550px;
+    line-height: 40px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    padding: 0px 50px 0px 20px;
+    border-radius: 15px;
+}
+
+.pesquisa-container i{
+    position: absolute;
+    left: 0px;
+}
 
 .banner{
     height: 100vh;
-    background-image: url(../imagens/fundohome.png);
+    background-image: url(imagens/fundohome.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
