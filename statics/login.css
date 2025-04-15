@@ -5,10 +5,7 @@ html, body {
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../imagens/pika.jpg'); 
-    background-size: cover;  
-    background-position: center; 
-    background-attachment: fixed; 
+    background: linear-gradient(#fdf5ad,#fab663,#ff8f2d,#fae20e);
     display: flex;  
     justify-content: center; 
     align-items: center;  
