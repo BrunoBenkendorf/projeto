@@ -1,80 +1,95 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-html{
+html {
     height: 500vh;
 }
 
-.container{
-    max-width: 1280px;
-    margin: auto;
+/* Agora a logo encosta na lateral esquerda */
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
 }
 
-header{
+header {
     width: 100%;
-    padding: 30px 4px;
+    padding: 30px 0;
     position: fixed;
+    background: linear-gradient(#fdf5ad, #fab663, #ff8f2d, #fae20e);
+    z-index: 1000;
 }
 
-.Logo{
+/* LOGO alinhada à esquerda, sem margem */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Logo {
     width: 90px;
-    height: 80px;
-    bottom: 100px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-header ul{
+/* Ícones */
+header ul {
     list-style-type: none;
+    display: flex;
+    gap: 10px;
 }
 
-header ul li{
+header ul li {
     font-size: 30px;
     color: black;
-    display: inline-block;
-    margin: 0 4px;
 }
 
-header ul li a{
+header ul li a {
     color: black;
     text-decoration: none;
 }
 
-.btn-login button{
+/* Botões */
+.btn-login button,
+.btn-cadastrar button {
     width: 120px;
     height: 40px;
     border: 0;
     border-radius: 12px;
-    background-color: #eb9f5c;
-    color: black;
+    background-color: #333;
+    color: white;
     font-size: 16px;
     cursor: pointer;
 }
 
-.btn-cadastrar button{
-    width: 120px;
-    height: 40px;
-    border-radius: 12px;
-    border: 0;
-    background-color: #eb9f5c;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
+.acoes-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
 }
 
-.pesquisa-container{
-    position: absolute;
-    left: 14%;
+/* Pesquisa */
+.pesquisa-container {
+    position: relative;
     background: white;
     height: 50px;
     padding: 10px;
@@ -84,7 +99,7 @@ header ul li a{
     align-items: center;
 }
 
-.pesquisa-txt{
+.pesquisa-txt {
     border: none;
     background: none;
     outline: none;
@@ -96,11 +111,16 @@ header ul li a{
     transition: .5s;
 }
 
-::-webkit-input-placeholder{
-    color: grey;
+.pesquisa-container:hover > .pesquisa-txt {
+    width: 400px;
+    padding: 0 6px;
 }
 
-.pesquisa-btn{
+.pesquisa-container:hover > .pesquisa-btn {
+    background: black;
+}
+
+.pesquisa-btn {
     width: 50px;
     height: 40px;
     border-radius: 45%;
@@ -111,22 +131,18 @@ header ul li a{
     transition: .5s;
 }
 
-.pesquisa-container:hover > .pesquisa-txt{
-    width: 400px;
-    padding: 0 6px;
-}
-
-.pesquisa-container:hover > .pesquisa-btn{
-    background: black;
-}
-
-.pesquisa-container i{
+.pesquisa-container i {
     color: #eb9f5c;
     font-size: 16px;
 }
 
-.banner{
+::-webkit-input-placeholder {
+    color: grey;
+}
+
+/* Fundo */
+.banner {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(#fdf5ad,#fab663,#ff8f2d,#fae20e);
+    background: linear-gradient(#fdf5ad, #fab663, #ff8f2d, #fae20e);
 }
