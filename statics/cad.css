@@ -1,0 +1,30 @@
+/* style.css */
+
+/* Garante que o HTML e o body ocupem toda a altura */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cor de fundo personalizada que cobre toda a página */
+.bg-custom {
+  min-height: 100%;
+  background: linear-gradient(to bottom, #fdf5ad, #fab663, #ff8f2d, #fae20e);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Estilo do botão */
+.btn-custom {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #222;
+}
